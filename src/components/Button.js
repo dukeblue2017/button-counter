@@ -18,4 +18,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ increment, decrement }, dispatch);
 }
 
-export default Button;
+export default connect(null, mapDispatchToProps)(Button);

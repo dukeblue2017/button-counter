@@ -1,9 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const Counter = function() {
-  return (<div>0</div>)
-}
+const Counter = props => <div>{props.counter}</div>;
 
 function mapStateToProps(state) {
   return {
